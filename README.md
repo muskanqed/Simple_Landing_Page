@@ -19,15 +19,14 @@ Step 2: Lets learn some of the tags used in the above code
 Example: 
 
 `<div style="background-color: lightblue; padding: 10px;">
-    This is a div container.  
-</div>`
+    This is a div container.  </div>`
 
 * `<span>` : An inline container used to group text or other inline elements without adding line breaks.
 
 Example: 
 
-`<p>This is a paragraph with a <span style="color: red;">highlighted</span> word.
-</p>`
+`<p>This is a paragraph with a <span style="color: red;">highlighted</span> word.</p>
+`
 
 * `<head>` : Contains metadata and links to resources like stylesheets and scripts; it's not visible on the webpage.
 
@@ -35,8 +34,7 @@ Example:
 
 `<head>
     <title>My Webpage</title>
-    <link rel="stylesheet" href="styles.css">
-</head>`
+    <link rel="stylesheet" href="styles.css"></head>`
 
 * `<body>` : Encloses the content of the webpage that is visible to users, including text, images, and links.
 
@@ -44,8 +42,7 @@ Example:
 
 `<body>
     <h1>Welcome to My Webpage</h1>
-    <p>This is the main content of the page.</p>
-<body>`
+    <p>This is the main content of the page.</p><body>`
 
 * `<h1> to <h6>` : Define HTML headings, with <h1> being the highest (or most important) level and <h6> the lowest.
 
@@ -105,8 +102,8 @@ Example:
 
 Example:
 
-`<button type="button" onclick="alert('Button clicked!')">Click Me
-</button>`
+`<button type="button" onclick="alert('Button clicked!')">Click Me</button>
+`
 
 * <br>: Inserts a line break, moving the following content to a new line.
 
@@ -115,3 +112,59 @@ Example:
 `<p>First line of text.<br>Second line of text.</p>`
 
 
+### CSS
+
+* CSS stands for Cascading Style Sheets. It is used to style our applications.
+
+* You can add CSS to your HTML app by using the  style attribute inline styles, internal styles external css file.
+
+Approach #1 - Inline styles
+
+`<body style="background-color: black;">
+... rest of the code</body>`
+
+Approach #2 - Internal styles
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+
+Approach #3 - External styles
+
+* Add a new file called index.css
+* Add the following code in it
+
+`body {
+    background-color: black;
+}`
+
+### Common style attributes
+
+* color: Sets the text color.
+* background-color: Sets the background color.
+* font-size: Sets the size of the text.
+* margin: Sets the outer space around an element.
+* padding: Sets the inner space within an element.
+* border: Sets the border around an element.
+* Flexbox: Flexbox is a CSS layout model designed to help with the arrangement of items within a container.
+* Classes and ids: In CSS, classes and IDs are used as selectors to apply styles to HTML elements. They help in targeting specific elements for styling and can be used to enhance the modularity and reusability of CSS code.
